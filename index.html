@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              CyanLight: "#4ABEBD",
+              Cyan: "#2AB2AF",
+              BrightYellow: "#C0DF34",
+              LightGray: "#E5EFF5",
+              GrayishBlue: "#98A6BD",
+            },
+            fontFamily: {
+              Karla: ["'Karla', sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Single Price Grid Component</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: #3e52a3;
+      }
+    </style>
+  </head>
+  <body class="w-full sm:w-full h-screen sm:h-full bg-LightGray font-Karla grid place-items-center overflow-hidden pb-[20rem] sm:-py-[22vw]">
+    <main class="w-full sm:w-[50rem] h-full sw:h-full sm:h-[35rem] bg-white shadow-lg rounded-lg my-20">
+      <section class="px-12 py-10">
+        <h1 class="text-4xl text-Cyan font-black">Join our community</h1>
+        <h2 class="text-BrightYellow font-bold text-2xl my-4">30-day, hassle-free money back guarantee</h2>
+        <p class="text-GrayishBlue text-xl">
+          Gain access to our full library of tutorials along with expert code
+            reviews. Perfect for any developers who are serious about honing
+            their skills.
+        </p>
+      </section>
+      <section class=" sm:h-[20rem] sm:w-full text-white bg-zinc-400 grid  sm:grid-cols-2">
+        <div class=" bg-Cyan px-10 py-10">
+          <h3 class="text-2xl font-bold text-LightGray">Monthly Subscription</h3>
+
+          <p class="mt-5"><strong class=" text-white text-5xl">&dollar;29</strong><span class="opacity-70"> per month</span></p>
+          <p class="text-xl mt-7">Full access for less than &dollar;1 a day</p>
+          <button class="bg-BrightYellow w-full p-3 rounded-lg mt-7">Sign up</button>
+        </div>
+        <div class="bg-CyanLight px-10 py-10">
+          <h1 class="text-2xl font-bold">Why Us</h1>
+        <p class="mt-5 text-lg opacity-70">
+          Tutorials by industry experts<br />
+          Peer &amp; expert code review<br />
+          Coding exercises<br />
+          Access to our GitHub repos<br />
+          Community forum<br />
+          Flashcard decks<br />
+          New videos every week
+        </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
